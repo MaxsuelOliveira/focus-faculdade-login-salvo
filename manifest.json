@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "AutoLogin FocusFaculdade",
+  "version": "1.0",
+  "description": "Extensão que preenche automaticamente o login e senha da faculdade.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://faculdadefocus.jacad.com.br/academico/aluno-v2/login/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
